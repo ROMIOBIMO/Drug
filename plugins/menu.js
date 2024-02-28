@@ -4,24 +4,24 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'morocco':'  ‎أوامر للمغاربة',
-  'applications':'‎ أوامر التطبيقات‎',
-  'drawing':'‎ توليد الصور‎ أوامر' ,
-  'ai':'‎ الذكاء الاصطناعي‎ أوامر',
-  'infobot':'‎ معلومات البوت‎',
-  'downloader':'‎ أوامر التحميلات',
-  'anime':'‎ أوامر عن  الأنيم',
-  'islam':'‎ الدين هو الاسلام‎',
-  'owner':'‎ اوامر صاحب البوت',
-  'search':'‎ أوامر البحث',
-  'audio-changer':'‎ تعديل الصوتيات‎',
-  'sticker':'‎ أوامر الملصقات',
-  'image-edit':'‎ تعديل الصور',
-  'pdf':'‎ pdf ومشتقاته‎',
-  'uploader':'‎‎ رفع الملفات‎',
+  'morocco':'  ‎Morrocans commands',
+  'applications':'  application commands',
+  'drawing':'‎ Generate images commands' ,
+  'ai':'‎ Artificial intelligence commands',
+  'infobot':'‎ Bot informations',
+  'downloader':'‎ Downloads commands',
+  'anime':'‎ Orders about the anime',
+  'islam':'‎ The religion is Islam',
+  'owner':'‎ The bot owner's orders',
+  'search':'‎ Search commands',
+  'audio-changer':'‎ Edit audio',
+  'sticker':'‎ Label orders',
+  'image-edit':'‎ Edit Pictures',
+  'pdf':'‎ pdf And its derivatives',
+  'uploader':'‎‎ upload files',
 }
 const defaultMenu = {
-  before: `السلام عليكم 👋. 
+  before: `Hello 👋. 
 
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
@@ -33,7 +33,8 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\n+212717457920',
+  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك
+    Using the bot correctly means that you increase the probability that the bot will remain running for a longer period. So, if you encounter any problem, do not be shy and don't hesitate to ask the bot owner. You will find his number below. + Share the bot owner’s videos to encourage him if you like this bot.*\n+212717457920',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -136,10 +137,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: 'BOBIZA BOT ♥',
-body: "أول بوت واتساب في العالم العربي 💖",
+title: 'MARWAN BOT ♥',
+body: "The first WhatsApp bot in the Arab world 💖",
 thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
-sourceUrl: 'https://instagram.com/noureddine_ouafy',
+sourceUrl: 'https://instagram.com/Marwan___wr',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
@@ -152,7 +153,7 @@ renderLargerThumbnail: true
     ],m, rpl)*/
 
   } catch (e) {
-    conn.reply(m.chat, '❎ هناك خطأ في لائحة الاوامر', m)
+    conn.reply(m.chat, '❌ There is an error in the command list', m)
     throw e
   }
 }
