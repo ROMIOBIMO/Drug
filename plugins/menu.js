@@ -33,8 +33,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك
-    Using the bot correctly means that you increase the probability that the bot will remain running for a longer period. So, if you encounter any problem, do not be shy and don't hesitate to ask the bot owner. You will find his number below. + Share the bot owner’s videos to encourage him if you like this bot.*\n+212717457920',
+  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك.*\n+212717457920',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -137,7 +136,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: 'MARWAN BOT ♥',
+title: 'BOBIZA BOT ♥',
 body: "The first WhatsApp bot in the Arab world 💖",
 thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
 sourceUrl: 'https://instagram.com/Marwan___wr',
@@ -153,7 +152,7 @@ renderLargerThumbnail: true
     ],m, rpl)*/
 
   } catch (e) {
-    conn.reply(m.chat, '❌ There is an error in the command list', m)
+    conn.reply(m.chat, '❎ There is an error in the command list', m)
     throw e
   }
 }
